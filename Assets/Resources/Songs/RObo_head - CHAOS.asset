@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a95413035bc4f4428958b90a7e30054, type: 3}
+  m_Name: RObo_head - CHAOS
+  m_EditorClassIdentifier: 
+  songName: CHAOS
+  artist: "\xC6sir"
+  sortOrder: 0
+  description: 
+  coverArt: {fileID: 0}
+  bpm: 0
+  easyLevel: 0
+  hardLevel: 0
+  chaosLevel: 0
+  glitchLevel: 0
+  character: {fileID: 11400000, guid: 4b11fc6e43529994a9e03eec90a22860, type: 2}
+  wwiseEventPreview: Play_Preview_RoboHead_CHAOS
+  wwiseEventPlay: 
+  previewClip: {fileID: 8300000, guid: 3e805fdae3c4d7a4b9836637af1c10d0, type: 3}
+  audioFilePath: 
+  chartAnimator: {fileID: 0}

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a95413035bc4f4428958b90a7e30054, type: 3}
+  m_Name: Cherry - Come Back To Me (Shadow The Hedgehog Song)
+  m_EditorClassIdentifier: 
+  songName: Come Back To Me (Shadow The Hedgehog Song)
+  artist: LongestSoloEver, HalaCG, Breeton Boi
+  sortOrder: 0
+  description: 
+  coverArt: {fileID: 0}
+  bpm: 0
+  easyLevel: 0
+  hardLevel: 0
+  chaosLevel: 0
+  glitchLevel: 0
+  character: {fileID: 11400000, guid: 2d32926a3017e8e40903005fd6d1ca42, type: 2}
+  wwiseEventPreview: Play_Preview_Cherry_ComeBackToMeShadowTheHedgehogSong
+  wwiseEventPlay: 
+  previewClip: {fileID: 8300000, guid: 09d3405e94f215d4997be9f8465b52b6, type: 3}
+  audioFilePath: 
+  chartAnimator: {fileID: 0}

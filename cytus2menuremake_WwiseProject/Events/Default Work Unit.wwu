@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" SchemaVersion="133">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_Preview_Cherry_0scill4torfeatMasKimuraMEG" ID="{AD885402-22A6-4C4A-B12E-C5E7ED83D320}">
+					<ChildrenList>
+						<Action Name="" ID="{C8F7A99C-C8BF-4ED9-953F-1A1BEEEF53C9}" ShortID="675511422">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cherry-Fuzi _ Neru _ Mas Kimura _ MEG - 0scill4tor (feat_ Mas Kimura &amp; MEG)_Preview" ID="{7F3BDEFF-7E6A-4487-A42F-2593562544B1}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Preview_Cherry_ComeBackToMeShadowTheHedgehogSong" ID="{664C95E2-104D-41E0-B5F7-D999CCA8BB85}">
+					<ChildrenList>
+						<Action Name="" ID="{41D24E90-02BA-4D3C-9073-2DA28C37DBC5}" ShortID="237436315">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Cherry-LongestSoloEver _ HalaCG _ Breeton Boi - Come Back To Me (Shadow The Hedgehog Song)_Preview" ID="{7F6D3CA6-FDFB-496D-B4D8-1D4D2E540151}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Preview_ConneR_CarryAllBeforeOne" ID="{C8501A92-207D-4CB0-AB14-BD50621AAECB}">
+					<ChildrenList>
+						<Action Name="" ID="{F742A93D-77DD-467B-89BF-C5180B8DB63E}" ShortID="34233242">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ConneR-Lure Rabbit _ NaiMeng - Carry All Before One_Preview" ID="{588BFCB2-DC72-4BFA-86FF-F5017D55F826}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Preview_ConneR_SeraphimLongVer" ID="{E0C59F9A-3D77-4AFB-BB49-7B8842AB8818}">
+					<ChildrenList>
+						<Action Name="" ID="{D6AF219E-DF68-464F-BE80-A3DEB57A8959}" ShortID="111326291">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ConneR-Yoohsic Roomz - Seraphim (Long Ver_)_Preview" ID="{9FB21E9C-7DEB-4165-9135-E0762F5A75A1}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Preview_ConneR_V" ID="{966ACD1E-D32B-4735-8445-0922F097AC8A}">
+					<ChildrenList>
+						<Action Name="" ID="{E1EDDDBA-5DB0-4463-9371-04B8B5D0E413}" ShortID="502075469">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ConneR-Æsir - V_Preview" ID="{ED85F099-F65D-4D17-8193-1074B091BE8C}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Preview_ConneR_HistoryDstryeR" ID="{6BE2B56B-DFD5-4222-9121-2BC54AAFC6C4}">
+					<ChildrenList>
+						<Action Name="" ID="{E83D8E27-F39E-4E1E-B061-A233858A3FC2}" ShortID="316542085">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="ConneR-溝口ゆうま _ 大瀬良あい _ まるもこ - History Dstr∅yeR_Preview" ID="{D2791AC9-24C5-43D3-AB0F-3EC589FE47CA}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Preview_NaiLong_toAsteroidB612RETALE" ID="{2740B88A-9D6E-450E-B929-9D3C9C0DA99C}">
+					<ChildrenList>
+						<Action Name="" ID="{39A31937-9044-44BF-8D4C-58BE089E1E13}" ShortID="169874640">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Nai Long-sasalasa_sasakure_UK (ササクレ・ユーケイ)_lasah - to Asteroid B-612 _ RE≠TALE_Preview" ID="{05D6FE29-D193-4F1D-BCCF-CA62FAFB6C1F}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Preview_NaiLong_LOVEOVERDREAMSfeatYURiCa" ID="{5655B409-C598-41A0-9E41-5ED0E06F3D73}">
+					<ChildrenList>
+						<Action Name="" ID="{AFA34C4D-E70B-4D11-A491-AA7B4751C4F7}" ShortID="706257214">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Nai Long-SOUND HOLIC _ Eurobeat Union _ 花たん - LOVE OVER DREAMS(feat_ YURiCa_花たん)_Preview" ID="{1912F23F-801C-4AAD-8FB5-7E0AFEFE5370}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Preview_Neko_Resonate" ID="{D62495EB-C5D5-476D-B827-F2A634EFC361}">
+					<ChildrenList>
+						<Action Name="" ID="{A7C14441-9EE9-4DDD-9259-EEED95FE3807}" ShortID="194975898">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Neko-Aethral _ hyleo _ oxygenetiX _ KataribeSan _ Aethral Boss _ Kim Andersen _ Magnus Schröter _ Kataribe San - Resonate_Preview" ID="{6B2DBEB3-60F3-43EF-99D8-045442052F18}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Preview_Neko_CALAMITYRHAPSODY" ID="{89C4F421-E36A-4114-BC90-1445B081F813}">
+					<ChildrenList>
+						<Action Name="" ID="{14E31A41-9D7C-4261-B0E2-55879EF5D448}" ShortID="632136720">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Neko-AIKA - CALAMITY RHAPSODY_Preview" ID="{E7FADC63-C96D-4976-8F77-F483C4B76C83}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Preview_Neko_StarryEyedDreamerfeatSOLARIAExplici" ID="{513479FA-A5B2-445D-B15A-1A1F6F9701E3}">
+					<ChildrenList>
+						<Action Name="" ID="{7218A90C-66E4-43A7-A193-DFBD7FD7FAD6}" ShortID="120103499">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Neko-AIKA _ Solaria - Starry Eyed Dreamer (feat_ SOLARIA) (Explicit)_Preview" ID="{6769DAF4-46A1-4AC5-B62B-0972C67622CD}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Preview_Paff_NatsuNoHate" ID="{FE69E0B1-CE78-4020-BC0D-0CADC995B6B0}">
+					<ChildrenList>
+						<Action Name="" ID="{932D5B95-BB74-4E2D-8514-52A51F20E3B1}" ShortID="320010451">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Paff-DJ Noriken _ 星名はる - ナツノハテ (夏日的尽头)_Preview" ID="{24999489-20FE-4B49-A9BA-FA2C9A698E8A}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Preview_Paff_LeavingAllBehindovercast" ID="{4D08C5AE-857F-4072-9AAA-6AB3ADC8CF04}">
+					<ChildrenList>
+						<Action Name="" ID="{C17C90D9-0903-4B60-8DC1-3C25D7F75555}" ShortID="427490620">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Paff-NOMA - Leaving All Behind -overcast_Preview" ID="{B98572FD-4C9A-4077-BE84-B6218B86CBF2}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Preview_Paff_Incyde" ID="{8960E9ED-F48F-46C5-A56D-1C226D6E38EE}">
+					<ChildrenList>
+						<Action Name="" ID="{1433C7E8-8FB3-42E0-B8E3-FFEF3F63EE02}" ShortID="1072188273">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Paff-YbeLL _ Sta - Incyde_Preview" ID="{41193E18-C7BD-4A2A-A1F4-70CD192B3943}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Preview_Paff_HyouryuwithKIVCytusver" ID="{C839B625-629D-460B-A8E5-AF9EE54EEA99}">
+					<ChildrenList>
+						<Action Name="" ID="{1389F6FA-A7DA-4B9A-A45A-0C53B29BB321}" ShortID="397167800">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Paff-菅原纱由理THE SxPLAY _ KIVΛ - 漂流 (Hyouryu) (with KIVΛ -CytusⅡ_ver-)_Preview" ID="{0160B90E-AAB7-4041-8E53-177965C5A6A3}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Preview_RoboHead_SILENTMOMENT" ID="{52F9C59C-EF86-47F3-80E4-7AB3DB84D7CD}">
+					<ChildrenList>
+						<Action Name="" ID="{7F38FA22-6D91-451C-BF3E-DD2A270639B9}" ShortID="588900278">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robo_Head-JAKAZiD _ Apo11o program _ Uzumaki - [SILENT[[·-·]]MOMENT]_Preview" ID="{DEB5E785-0DA9-49FD-BAAE-D4F43484EE05}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Preview_RoboHead_Midnight" ID="{DE6DB0C8-420C-4582-BE1B-9E1BA4318101}">
+					<ChildrenList>
+						<Action Name="" ID="{6D199EC1-1BF6-48EF-BE4F-681C4A55A400}" ShortID="262340953">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robo_Head-Teikyou - Midnight_Preview" ID="{FFBD5CEC-09C7-4435-9382-3ABF8523DCA1}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Preview_RoboHead_CHAOS" ID="{9F0305AE-9CDF-446C-BF24-D114CB250A2E}">
+					<ChildrenList>
+						<Action Name="" ID="{32944C6E-0C69-4EE3-89C6-F50D0F63D968}" ShortID="646703019">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Robo_Head-Æsir - CHAOS_Preview" ID="{282C2D0C-B142-4BA9-B267-8F398C7FB459}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Preview_sarflin_InfiniteEvolution" ID="{A0A790AE-0C0B-4FCA-B450-9767CDC85512}">
+					<ChildrenList>
+						<Action Name="" ID="{C12735AD-9EAB-496F-96A5-04C0B4E8EA10}" ShortID="215436424">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sarflin-Neurolink - Infinite Evolution_Preview" ID="{505C6681-1371-4C92-ACFE-CAFA2F1C9585}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Preview_sarflin_AethersChild" ID="{6AA6E983-6180-49A2-81E2-11A0F5D7B41E}">
+					<ChildrenList>
+						<Action Name="" ID="{6DD6A338-E8A7-47FE-AB90-32BBBFC65AF1}" ShortID="376073434">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sarflin-Relemo - Aether's Child_Preview" ID="{C7D19498-16B1-4E36-A725-93320E3C4F63}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Preview_sarflin_99Glooms" ID="{4839261A-6E42-49D6-9107-FC5B7F725ACD}">
+					<ChildrenList>
+						<Action Name="" ID="{D1E473AB-DB01-4A83-BC2B-84989588A660}" ShortID="55882494">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="sarflin-Sta - 99 Glooms_Preview" ID="{48AA83FA-5053-46AE-830D-BA4266BBC7C4}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Preview_Xenon_ImAliveREBiRTHFestivalAnthem2019Re" ID="{EDE8AF48-310B-4E36-B24E-2EF21366F8D8}">
+					<ChildrenList>
+						<Action Name="" ID="{170E1E5F-BCFD-4A01-B105-A3F2B8599DDF}" ShortID="645213329">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Xenon-Adaro - I'm Alive (REBiRTH Festival Anthem 2019) (Re-Style &amp; Vertex Remix)_Preview" ID="{C577D072-A2E5-4E2D-B0C8-E60E17A20282}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Preview_Xenon_AscensionMitiSRemix" ID="{F8F206CF-B982-4C97-A3AF-D9B0AE0122E9}">
+					<ChildrenList>
+						<Action Name="" ID="{3570E12A-CD7E-47BE-B682-1900B0D20C37}" ShortID="981515597">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Xenon-D__e Arcade _ MitiS - Ascension (MitiS Remix)_Preview" ID="{F06A5595-3722-41A9-B153-3858526C05F3}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Preview_Xenon_tellmeifimwrong" ID="{4B2E7350-FE38-45FE-8CEC-1AD0DB35419E}">
+					<ChildrenList>
+						<Action Name="" ID="{F29D6AC9-98BA-4F7C-8C5F-E2006FBCCFC5}" ShortID="797826949">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Xenon-PHONO _ EK0 - tell me if i'm wrong_Preview" ID="{0898C4D6-517F-401A-A43C-2AEA53904978}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_MenuMusic" ID="{14174A9C-FF29-4C90-AE64-3040A909493E}">
+					<ChildrenList>
+						<Action Name="" ID="{6BE8FDCF-8B6A-4D09-AD7D-54A389E0EC02}" ShortID="835349025">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MenuMusic" ID="{FB5FC0E2-D7D8-4746-BB91-8255F12196AC}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Character_Confirm" ID="{0301D0CD-AE0D-4C93-954E-F2A7A817FACD}">
+					<ChildrenList>
+						<Action Name="" ID="{FEDB9861-263F-4FAF-8F4A-C02FC64616BB}" ShortID="665697737">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Character_Confirm" ID="{DB5D2830-868A-41ED-AA8D-4CD2271C7D54}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Song_Select" ID="{62967A17-D945-4B70-9C9C-33E6C0DA5CE4}">
+					<ChildrenList>
+						<Action Name="" ID="{ABBF32AD-7CE0-4FBB-9F1F-62BB4BD951E0}" ShortID="629904116">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Song_Select" ID="{C519311A-2D8C-4473-AC5D-E756D56714FE}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UI_Back" ID="{CCBC0885-3C79-4B22-9228-9BE62A00BBC9}">
+					<ChildrenList>
+						<Action Name="" ID="{C29772FA-7D35-44C6-8134-1D7121381217}" ShortID="881858960">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Back" ID="{D2F9F5A8-9B7F-4F32-8EA9-EA1A369A718B}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UI_Click" ID="{6950707C-0000-4190-8AB5-204A9CF4EC31}">
+					<ChildrenList>
+						<Action Name="" ID="{9FE79CE2-7EAB-47CA-ADE1-85646ED42BC6}" ShortID="713346241">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Click" ID="{3C8F5371-4DB0-41AE-92D7-CD84077AB562}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="UI_Hover" ID="{DFC7CC94-D9D3-4E5B-8F4F-4E25FAFAFD6E}">
+					<ChildrenList>
+						<Action Name="" ID="{884D347C-D549-4993-B81C-AE45816B31E8}" ShortID="806263916">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="UI_Hover" ID="{B967F10E-3FAD-4F91-8272-19FBB29635AE}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Menumusic" ID="{0065ABF5-8164-41F4-AF96-E78A14365C48}">
+					<ChildrenList>
+						<Action Name="" ID="{78BED77F-6BA9-427A-8212-6D04558A919C}" ShortID="717976055">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MenuMusic" ID="{FB5FC0E2-D7D8-4746-BB91-8255F12196AC}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

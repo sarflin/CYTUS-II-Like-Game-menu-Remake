@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a95413035bc4f4428958b90a7e30054, type: 3}
+  m_Name: ConneR - V
+  m_EditorClassIdentifier: 
+  songName: V
+  artist: "\xC6sir"
+  sortOrder: 0
+  description: 
+  coverArt: {fileID: 0}
+  bpm: 0
+  easyLevel: 0
+  hardLevel: 0
+  chaosLevel: 0
+  glitchLevel: 0
+  character: {fileID: 11400000, guid: 942562428ac047f49a8352ca133ede1c, type: 2}
+  wwiseEventPreview: Play_Preview_ConneR_V
+  wwiseEventPlay: 
+  previewClip: {fileID: 8300000, guid: 403e95b14826d504d835bea362d68939, type: 3}
+  audioFilePath: 
+  chartAnimator: {fileID: 0}

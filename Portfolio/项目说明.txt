@@ -1,0 +1,75 @@
+# 项目说明 —— 基于 Wwise 交互式音频的 Unity 菜单系统
+
+## 1. 项目概述
+
+类似音乐游戏《Cytus II》的主菜单 → 角色选择 → 曲目选择 → 设置的完整菜单流程，重点实现"音乐随界面切换"的交互式音频系统，并打通 Unity ↔ Wwise 音频中间件的完整管线。
+
+项目覆盖音频系统构建、UI 与音频交互、编辑器自动化工具、以及全流程测试与缺陷定位，产出完整的测试用例与缺陷记录。
+
+## 2. 技术栈
+
+| 类别 | 技术 |
+|---|---|
+| 引擎 | Unity 2022.3 LTS（UGUI + TextMeshPro） |
+| 音频中间件 | Audiokinetic Wwise 2025.1 |
+| 语言 | C# |
+| 数据 | ScriptableObject（数据驱动） |
+| 编辑器 | 自定义 EditorWindow / MenuItem 工具链 |
+
+## 3. 系统架构
+
+### 3.1 音频架构（Wwise 侧）
+
+```
+Main Audio Bus（Master，System 输出）
+├── Music Bus（Music_Volume RTPC 控制）
+└── SFX Bus（SFX_Volume RTPC 控制）
+
+MenuMusic（Music Switch Container，Switch Group = Menu_Music）
+├── MainMenu（Playlist，Loop = Infinite）
+├── CharacterSelect（嵌套 Music Switch Container，Switch Group = Character_Theme）
+│   ├── paff / neko / Cherry / ConneR / ... / Non（各角色 Playlist，Loop = Infinite）
+├── SongSelect（Playlist）
+└── InGame（Playlist）
+
+SoundBank 划分：Init / Music / SongPreviews / UI
+```
+
+- 交互式音乐：`Menu_Music` Switch Group 驱动界面间无缝转场，`Character_Theme` Switch Group 驱动选角界面按角色切主题曲。
+- 音量控制：`Music_Volume` / `SFX_Volume` 两个 Game Parameter（RTPC）分别映射到 Music Bus / SFX Bus 的 Bus Volume。
+
+### 3.2 逻辑架构（Unity 侧）
+
+```
+MenuManager（单例，界面状态机 + 转场调度）
+├── MainMenuUI / CharacterSelectUI / SongSelectUI / SettingsUI
+├── AudioSystemManager（单例，Bank 加载 / 音乐状态切换 / UI 音效 / 预览控制）
+├── WwiseIntegration（Wwise API 封装层：PostEvent / SetRTPC / SetSwitch / LoadBank）
+└── ScreenTransition（遮罩 + 圆形进度条转场）
+
+数据层：CharacterData / SongData（ScriptableObject，关联 Wwise 事件名与 Switch 名）
+编辑器工具：MenuSetupHelper / SampleDataCreator / PreviewLinker / DataEditorWindow / AudioSceneSetup
+```
+
+## 4. 核心功能
+
+1. **交互式音乐**：主菜单 / 选角 / 选歌 / 游戏 四状态音乐随界面无缝切换；选角界面按角色切换主题曲。
+2. **UI 音效反馈**：悬停 / 点击 / 返回 / 确认四类音效统一派发。
+3. **歌曲预览**：精确停播（PlayingID），支持 Wwise 事件缺失时回退 AudioSource。
+4. **音量设置**：音乐 / 音效两个 0–100 滑块，通过 RTPC 实时控制，PlayerPrefs 持久化。
+5. **界面转场**：圆形进度条读条 + 界面淡入，音频在"退出 / 到达"两个时机精确衔接。
+6. **编辑器自动化**：按命名约定批量解析音频、自动生成数据资产、一键配置场景音频。
+
+## 5. 我负责的部分
+
+- 音频系统整体设计：交互式音乐状态机、SoundBank 划分、RTPC 音量控制、总线路由
+- Unity 侧全部代码（AI辅助）：音频封装层、菜单状态机、UI 交互、编辑器工具
+- 全流程测试：编写测试用例，发现并定位 9 类缺陷（含跨 Wwise/Unity 边界的静音、RTPC 失效、操作体验等问题），完成根因分析与回归验证。
+
+## 6. 技术亮点
+
+- 掌握 Wwise 交互式音乐（Music Switch Container / Music Playlist Container / Switch Group / RTPC / SoundBank / Bus 路由）。
+- 对音频中间件与游戏引擎的交界问题有实战定位经验（总线层级、RTPC 作用域、Game Sync 命名一致性等）。
+- 数据驱动 + 编辑器自动化，降低音频内容配置成本。
+- 具备结构化测试思维：测试用例 + 缺陷记录 + 根因分析 + 回归验证的完整闭环。
+

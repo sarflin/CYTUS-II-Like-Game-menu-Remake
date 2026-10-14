@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{407B3537-1750-45A8-81DE-AF7DBE3ACBF5}" SchemaVersion="133">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{407B3537-1750-45A8-81DE-AF7DBE3ACBF5}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Menu_Music" ID="{C2CDEAA1-1022-421D-8A91-6CE2AB4A1F82}">
+					<ChildrenList>
+						<Switch Name="MainMenu" ID="{53782D8F-7891-45AC-AD3B-7C997A8C9A3B}"/>
+						<Switch Name="CharacterSelect" ID="{C2C247F9-87BC-4F6D-ABEB-9326138F8E8F}"/>
+						<Switch Name="SongSelect" ID="{2022F427-DCD1-48AE-B517-ACD117FEFC22}"/>
+						<Switch Name="InGame" ID="{F97894B0-E093-4070-B54C-ABF61BB05EDA}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Character_Theme" ID="{0AC00CC1-0CD7-47E4-8154-CCF049906786}">
+					<ChildrenList>
+						<Switch Name="Cherry" ID="{A0D0F8D6-F44B-448D-A38C-862492FA25CE}"/>
+						<Switch Name="ConneR" ID="{B09DEFB3-82D0-4801-B4D0-2FAB6AF7DE21}"/>
+						<Switch Name="NaiLong" ID="{52AAECDA-31B0-4B4A-9C93-6323F7CFEBB4}"/>
+						<Switch Name="neko" ID="{CDBB31ED-C29A-4EA6-997A-62E74271AB90}"/>
+						<Switch Name="paff" ID="{316E9184-08C8-408C-AA12-07DC10F5C79C}"/>
+						<Switch Name="Robo_Head" ID="{B68A1D2A-2545-4A35-9728-4E7B4203A28D}"/>
+						<Switch Name="sarflin" ID="{23F4ECD9-6A89-44F4-A5C8-8E3D5BB18C38}"/>
+						<Switch Name="Xenon" ID="{15178F47-59A0-403D-B013-B694DB0B1373}"/>
+						<Switch Name="Non" ID="{7013B7E4-3DF5-4D7C-A287-CC703F4BE7CD}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

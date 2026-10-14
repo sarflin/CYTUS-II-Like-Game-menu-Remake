@@ -1,0 +1,143 @@
+# 缺陷记录（Bug Log）—— Cytus2 风格音频菜单系统
+
+> 项目：基于 Wwise 交互式音频的 Unity 菜单系统复刻
+> 技术栈：Unity 2022.3 + Wwise 2025.1 + C#
+> 说明：本记录整理了项目开发与测试过程中发现、定位、修复并验证的问题，涵盖音频功能、音频中间件集成、交互体验三类，展示完整的问题发现与根因分析能力。
+
+---
+
+## 一、缺陷概览
+
+| 缺陷 ID | 分类 | 严重等级 | 一句话根因 |
+|---|---|---|---|
+| A-1 | 音频功能 | 1 | 裸 Music Segment 无循环开关，播完即停 |
+| A-2 | 交互逻辑 | 2 | 界面初始化误触发了角色主题曲切换 |
+| A-3 | 音频集成 | 1 | Wwise 关键词导致 Switch 状态名与代码不一致，静默失效 |
+| A-4 | 交互逻辑 | 2 | 转场流程里 Stop 时序错误，把刚播的预览停掉 |
+| A-5 | 交互逻辑 | 2 | 返回选角时未恢复上次选中角色的主题曲 |
+| B-1 | 音频集成 | 0 | 新建 Bus 为平级总线，挂到 No_Output 设备，全静音 |
+| B-2 | 音频集成 | 1 | Slider 回调在值不变时不触发，RTPC 从未被设置 |
+| B-3 | 音频集成 | 1 | RTPC 作用域不匹配，带 gameObject 的重载不生效 |
+| C-1 | 交互体验 | 2 | 封面流式布局导致默认项视觉上"已选中" |
+
+---
+
+## 二、详细缺陷记录
+
+### A-1 主菜单主题曲以及角色主题曲只播放一遍后停止
+
+- 分类：音频功能　严重等级：1
+- 现象：长时间停留在主菜单界面以及长时间停留在选角界面，背景音乐只播放一遍就不再循环。
+- 复现步骤：进入游戏 → 停留在主菜单或者选角界面 → 等待主题曲播放结束 → 音乐停止。
+- 定位过程：
+  1. 查看 `MenuMusic` MusicSwitchContainer 下的各分支：8 个角色主题曲无法循环， `MainMenu`也（以及 `SongSelect`（目前留空）/`InGame`（目前留空））不能；
+  2. 查看 Wwise 工程结构，发现角色主题曲和 `MainMenu` 是直接挂在 Switch Container 下的裸 `MusicSegment`。
+- 根因：Wwise 中 Music Segment 本身没有循环开关，裸 Segment 播放完 Entry→Exit 一遍即停止；无限循环必须由外层的 Music Playlist Container 的 Loop Count 提供。
+- 修复方案：在 Wwise 中将 `MainMenu`以及各个角色主题曲各自包进 Music Playlist Container（所有角色的Music Playlist Container以CharacterSelect为父类），Loop Count 设为 Infinite，重新 Generate SoundBanks 并同步。
+- 验证方式：主菜单停留超过 2 个完整循环周期，音乐持续循环无中断。
+
+---
+
+### A-2 进入角色选择界面即自动播放 paff 主题曲
+
+- 分类：交互逻辑　严重等级：2
+- 现象：首次进入选角界面，未做任何操作即开始播放默认角色（paff）的主题曲，且该角色视觉上处于高亮。
+- 定位过程：追踪 `CharacterSelectUI` 的初始化链路，发现 `PopulateCarousel()` 在初始填充时调用了 `UpdateInfo(selectedIndex)`，而 `UpdateInfo` 内部会调用 `SetCharacterTheme` 并播选中音效。
+- 根因：初始化 populate 与"玩家明确选中角色"共用了同一条逻辑，导致界面初始化被误判为一次选中操作。
+- 修复方案：把主题曲切换从 `UpdateInfo` 中剥离，仅在玩家明确点击/滑动选中角色时才触发；进入选角界面时先切到"未选角色"状态。
+- 验证方式：首次进选角界面不播放任何角色主题曲，主菜单曲继续；点击/滑动选中角色后才播放对应主题曲。
+
+---
+
+### A-3 返回主菜单后角色主题曲未按预期停止（None / Non 命名不一致）
+
+- 分类：音频集成　严重等级：P1
+- 现象：离开选角界面后，`StopCharacterTheme` 调用未生效，主题曲状态残留。
+- 定位过程：逐条核对代码发送的 Switch 状态名与 Wwise 工程中实际的 Switch 状态名。
+- 根因：Wwise 中 `Character_Theme` 的"未选角色"状态名是 `Non`（因 `None` 是 Wwise 保留关键词无法命名），而代码中写的是 `"None"`。字符串不匹配导致 `SetSwitch` 静默失败、无任何报错。
+- 修复方案：统一状态名为 `Non`，并抽成可配置字段 `noCharacterThemeState`，避免硬编码。
+- 验证方式：返回主菜单后角色主题曲正确停止，主菜单曲恢复。
+- 经验总结：Game Sync（Event / Switch / State / RTPC）的命名是大小写敏感的字符串，必须与 Wwise 完全一致；此类问题不会抛异常，需结合 Wwise Profiler 或日志进行排查。
+
+---
+
+### A-4 进入选歌界面无歌曲预览声
+
+- 分类：交互逻辑　严重等级：P2
+- 现象：从选角确认角色进入选歌界面后，歌曲预览一开始没有声音，需要玩家点击一次歌曲信息才会正常播放歌曲预览。
+- 定位过程：追踪 `MenuManager.SelectCharacter` 的调用顺序：先 `songSelect.Initialize(character)`（内部播放预览），再 `GoToSongSelect()`。
+- 根因：`GoToSongSelect()` 中调用了 `StopSongPreview()`，把刚刚由 `Initialize` 触发的预览立刻停掉了。
+- 修复方案：移除 `GoToSongSelect` 中的 `StopSongPreview`，并调整为先切换界面、再初始化并播放预览。
+- 验证方式：进入选歌界面即能听到当前选中歌曲的预览。
+
+---
+
+### A-5 从选歌界面返回选角界面时静音
+
+- 分类：交互逻辑　严重等级：2
+- 现象：从选曲界面切回选角界面后没有声音，体验断裂。
+- 根因：返回选角时把 `Character_Theme` 直接设成了 `Non`（静音），且未恢复上次选中角色的主题曲。
+- 修复方案：返回选角时若存在上次选中角色，播放其主题曲并恢复高亮；否则保持主菜单曲循环。
+- 验证方式：选角 → 选歌 → 返回选角，播放的是刚才对应角色的主题曲。
+
+---
+
+### B-1 Wwise侧走带控制以及Sound Caster测试有声、Unity 运行时全静音
+
+- 分类：音频集成　严重等级：0
+- 现象：在 Wwise 走带控制（Transport）和Sound Caster中测试事件正常出声、RTPC 正常，但 Unity 里完全没有声音。
+- 定位过程：
+  1. 检查重新生成后的 `Init.json`，发现 `Music Bus` / `SFX Bus` 的 ObjectPath 是 `\Busses\Default Work Unit\Music Bus`（与 `Main Audio Bus` 平级），Wwise侧检查过后发现Music Bus和SFX Bus同级；
+  2. `Init.txt` 中出现 `No_Output` 音频设备。
+
+- 根因：新建的 `Music Bus` / `SFX Bus` 被建成了 Master Audio Bus（`Main Audio Bus`）的平级总线而非子总线，因此没有继承 System 输出设备，被挂到了 `No_Output`。所有路由到这两条总线的音乐/音效全部静音。
+- 修复方案：在 Wwise 中将两条总线拖入 `Main Audio Bus` 成为其子总线。
+- 验证方式：重新 Generate 后 `Init.json` 中路径变为 `\Busses\Default Work Unit\Main Audio Bus\Music Bus`，Unity 恢复出声。
+- 经验总结：Wwise 走带正常只证明"工程配置正确"，不代表"Unity 集成正确"；两端声音不一致时，优先检查 Bus 层级、输出设备与 SoundBank 同步。
+
+---
+
+### B-2 设置界面音量滑块无法控制音量
+
+- 分类：音频集成　严重等级：1
+- 现象：游戏有声音，但设置界面的"音乐音量/音效音量"滑块拖动后音量无变化。
+- 定位过程：核对滑块 → `SetRTPC` 的调用链，发现 RTPC 从未被调用。
+- 根因：`Slider` 在创建时已初始化 `value = 100`，启动时再赋值 `slider.value = PlayerPrefs.GetFloat(key, 100f)`（首次为 100）时数值未变化，而 Unity 的 `Slider.onValueChanged` 在值不变时**不会触发**，导致 `SetRTPC` 从未执行，Game Parameter 一直停在 Wwise 默认值（0，映射为静音）。
+- 修复方案：启动时显式调用一次音量应用逻辑，不依赖滑块回调。
+- 验证方式：启动即有正确音量；拖动滑块音量实时变化。
+
+---
+
+### B-3 修复 B-2 后滑块仍无法控制音量（RTPC 作用域问题）
+
+- 分类：音频集成　**严重等级**：1
+- 现象：滑块数值在变化、也调用了 `SetRTPC`，但音量仍不随动。
+- 定位过程：确认代码使用的是带 gameObject 的重载 `SetRTPCValue(name, value, gameObject)`。
+- 根因：该重载按"Game Object 作用域"设置参数值；若 Wwise 中 Game Parameter 被设为 **Global 作用域**，带 gameObject 的重载不生效。
+- 修复方案：改用全局重载 `SetRTPCValue(name, value)`，兼容 Global 与 Game Object 两种作用域。
+- 验证方式：拖动两个滑块，音乐（角色主题曲/主菜单曲/歌曲预览）与音效音量分别实时受控。
+
+---
+
+### C-1 选角界面画像默认高亮、误入选歌界面
+
+- 分类：交互体验　严重等级：2
+- 现象：进入选角界面，默认角色（paff）视觉上像"已被选中"，点击它直接进入选歌界面而非播放其主题曲。
+- 根因：原布局为"居中项最大"的 coverflow，进入界面时 index 0 天然居中放大，同时点击逻辑把"选中项再次点击"当作确认。
+- 修复方案：改为所有画像等大排列，仅在选中时放大；进入界面默认无选中，需先点击/滑动选中，再次点击才确认进入选歌。
+- 验证方式：进界面无高亮；点击选中角色（放大 + 播放主题曲）；再次点击才进选歌。
+
+---
+
+## 三、性能测试
+
+- **SoundBank 体积与加载方式**：`Music.bnk` 约 42MB、`SongPreviews.bnk` 约 108MB。当前启动时同步全量加载，会产生启动卡顿（hitch）。优化方向：大音乐 Bank 采用流式（streaming）加载、异步加载（`LoadBankAsync`），歌曲预览改为按需加载。
+
+---
+
+## 四、测试方法总结
+
+1. 跨端对比：Wwise 走带控制 vs Unity 运行时，用于隔离"工程配置问题"与"引擎集成问题"。
+2. 逐链路追踪：从 UI 事件 → 封装层 → `AkSoundEngine` API → 生成产物（`.bnk`/`Init.json`），定位问题所在层。
+3. 生成产物核对：通过 `Init.json` / `Init.txt` / `SoundbanksInfo.json` 核对对象层级、路径、设备。
+4. 回归验证：每次修复后重新 Generate SoundBanks 并同步，回到复现场景验证。

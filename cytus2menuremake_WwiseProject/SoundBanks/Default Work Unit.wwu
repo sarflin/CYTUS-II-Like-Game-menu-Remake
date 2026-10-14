@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{DADF4965-1F3F-497E-95E7-429D4272FF49}" SchemaVersion="133">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{DADF4965-1F3F-497E-95E7-429D4272FF49}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="UI" ID="{3FE473E2-80A4-4D77-AEEA-14E99DEE472C}">
+					<ObjectInclusionList>
+						<ObjectRef Name="UI_Click" ID="{6950707C-0000-4190-8AB5-204A9CF4EC31}" WorkUnitID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="UI_Back" ID="{CCBC0885-3C79-4B22-9228-9BE62A00BBC9}" WorkUnitID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Song_Select" ID="{62967A17-D945-4B70-9C9C-33E6C0DA5CE4}" WorkUnitID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Character_Confirm" ID="{0301D0CD-AE0D-4C93-954E-F2A7A817FACD}" WorkUnitID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="UI_Hover" ID="{DFC7CC94-D9D3-4E5B-8F4F-4E25FAFAFD6E}" WorkUnitID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Music" ID="{9D0F16C2-8BCC-4DA1-9537-824D109EF300}">
+					<ObjectInclusionList>
+						<ObjectRef Name="MenuMusic" ID="{FB5FC0E2-D7D8-4746-BB91-8255F12196AC}" WorkUnitID="{B37466F7-587D-49D6-834C-DDA9E2DE3E79}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_MenuMusic" ID="{14174A9C-FF29-4C90-AE64-3040A909493E}" WorkUnitID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="SongPreviews" ID="{DAFFA888-4F2B-43D3-83BB-2412A35F435E}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Preview_Paff_NatsuNoHate" ID="{FE69E0B1-CE78-4020-BC0D-0CADC995B6B0}" WorkUnitID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Preview_Paff_LeavingAllBehindovercast" ID="{4D08C5AE-857F-4072-9AAA-6AB3ADC8CF04}" WorkUnitID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Preview_Neko_CALAMITYRHAPSODY" ID="{89C4F421-E36A-4114-BC90-1445B081F813}" WorkUnitID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Preview_NaiLong_LOVEOVERDREAMSfeatYURiCa" ID="{5655B409-C598-41A0-9E41-5ED0E06F3D73}" WorkUnitID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Preview_Cherry_ComeBackToMeShadowTheHedgehogSong" ID="{664C95E2-104D-41E0-B5F7-D999CCA8BB85}" WorkUnitID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Preview_ConneR_HistoryDstryeR" ID="{6BE2B56B-DFD5-4222-9121-2BC54AAFC6C4}" WorkUnitID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Preview_Neko_StarryEyedDreamerfeatSOLARIAExplici" ID="{513479FA-A5B2-445D-B15A-1A1F6F9701E3}" WorkUnitID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Preview_RoboHead_CHAOS" ID="{9F0305AE-9CDF-446C-BF24-D114CB250A2E}" WorkUnitID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Preview_NaiLong_toAsteroidB612RETALE" ID="{2740B88A-9D6E-450E-B929-9D3C9C0DA99C}" WorkUnitID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Preview_RoboHead_Midnight" ID="{DE6DB0C8-420C-4582-BE1B-9E1BA4318101}" WorkUnitID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Preview_Xenon_tellmeifimwrong" ID="{4B2E7350-FE38-45FE-8CEC-1AD0DB35419E}" WorkUnitID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Preview_Paff_HyouryuwithKIVCytusver" ID="{C839B625-629D-460B-A8E5-AF9EE54EEA99}" WorkUnitID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Preview_Paff_Incyde" ID="{8960E9ED-F48F-46C5-A56D-1C226D6E38EE}" WorkUnitID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Preview_ConneR_V" ID="{966ACD1E-D32B-4735-8445-0922F097AC8A}" WorkUnitID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Preview_Neko_Resonate" ID="{D62495EB-C5D5-476D-B827-F2A634EFC361}" WorkUnitID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Preview_RoboHead_SILENTMOMENT" ID="{52F9C59C-EF86-47F3-80E4-7AB3DB84D7CD}" WorkUnitID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Preview_sarflin_AethersChild" ID="{6AA6E983-6180-49A2-81E2-11A0F5D7B41E}" WorkUnitID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Preview_sarflin_99Glooms" ID="{4839261A-6E42-49D6-9107-FC5B7F725ACD}" WorkUnitID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Preview_ConneR_SeraphimLongVer" ID="{E0C59F9A-3D77-4AFB-BB49-7B8842AB8818}" WorkUnitID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Preview_Cherry_0scill4torfeatMasKimuraMEG" ID="{AD885402-22A6-4C4A-B12E-C5E7ED83D320}" WorkUnitID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Preview_Xenon_AscensionMitiSRemix" ID="{F8F206CF-B982-4C97-A3AF-D9B0AE0122E9}" WorkUnitID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Preview_ConneR_CarryAllBeforeOne" ID="{C8501A92-207D-4CB0-AB14-BD50621AAECB}" WorkUnitID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Preview_Xenon_ImAliveREBiRTHFestivalAnthem2019Re" ID="{EDE8AF48-310B-4E36-B24E-2EF21366F8D8}" WorkUnitID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_Preview_sarflin_InfiniteEvolution" ID="{A0A790AE-0C0B-4FCA-B450-9767CDC85512}" WorkUnitID="{659E5DD6-5568-48FE-8752-3887CCA7C6FD}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a95413035bc4f4428958b90a7e30054, type: 3}
+  m_Name: "Nai Long - LOVE OVER DREAMS(feat_ YURiCa_\u82B1\u305F\u3093)"
+  m_EditorClassIdentifier: 
+  songName: "LOVE OVER DREAMS(feat_ YURiCa_\u82B1\u305F\u3093)"
+  artist: "SOUND HOLIC, Eurobeat Union, \u82B1\u305F\u3093"
+  sortOrder: 0
+  description: 
+  coverArt: {fileID: 0}
+  bpm: 0
+  easyLevel: 0
+  hardLevel: 0
+  chaosLevel: 0
+  glitchLevel: 0
+  character: {fileID: 11400000, guid: a8211faeccb57c54f9344aa573997f19, type: 2}
+  wwiseEventPreview: Play_Preview_NaiLong_LOVEOVERDREAMSfeatYURiCa
+  wwiseEventPlay: 
+  previewClip: {fileID: 8300000, guid: 6f5a562b95251a1418ad68470c186773, type: 3}
+  audioFilePath: 
+  chartAnimator: {fileID: 0}

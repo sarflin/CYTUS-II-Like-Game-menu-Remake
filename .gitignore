@@ -1,0 +1,83 @@
+# ==========================================================================
+# Unity
+# ==========================================================================
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+/[Aa]ssets/AssetStoreTools*
+sysinfo.txt
+
+# Visual Studio / Rider generated
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+.vs/
+.vsconfig
+crashlytics-build.properties
+
+# ==========================================================================
+# Unity build output
+# ==========================================================================
+/cytus2menuremake_Build/
+
+# ==========================================================================
+# Wwise Unity Integration — installed per-machine via the Wwise Launcher,
+# NOT project source. Re-integrate Wwise (2025.1) after cloning.
+# ==========================================================================
+/Assets/Wwise/
+/Assets/Wwise.meta
+
+# ==========================================================================
+# Wwise project — keep design data (work units / events / switches / states),
+# drop per-machine cache, generated banks, source audio and profiling.
+# ==========================================================================
+cytus2menuremake_WwiseProject/.cache/
+cytus2menuremake_WwiseProject/.backup*/
+cytus2menuremake_WwiseProject/*.prof
+cytus2menuremake_WwiseProject/*.akd
+cytus2menuremake_WwiseProject/*.validationcache
+cytus2menuremake_WwiseProject/*.wsettings
+cytus2menuremake_WwiseProject/GeneratedSoundBanks/
+cytus2menuremake_WwiseProject/Originals/
+cytus2menuremake_WwiseProject/AkWwiseProjectData.asset
+cytus2menuremake_WwiseProject/IncrementalSoundBankData.xml
+
+# ==========================================================================
+# Not published: heavy binaries / third-party copyrighted material
+# ==========================================================================
+/Assets/SongsPreview/
+/Assets/SongsPreview.meta
+*.ttf
+*.ttf.meta
+*.ttc
+*.ttc.meta
+*.otf
+*.otf.meta
+/cytus2menuremake_WwiseProject.zip
+/cytus2menuremake_demo1.0.zip
+/WwiseUnityIntegration_*_Src.zip
+/*.mp4
+/logRunSetup.txt
+
+# REAPER peak files
+*.reapeaks
+
+# Misc
+*.log
+*.tmp
+*.bak
