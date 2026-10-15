@@ -62,6 +62,8 @@ cytus2menuremake_WwiseProject/IncrementalSoundBankData.xml
 # ==========================================================================
 /Assets/SongsPreview/
 /Assets/SongsPreview.meta
+/Assets/Art/
+/Assets/Art.meta
 *.ttf
 *.ttf.meta
 *.ttc
